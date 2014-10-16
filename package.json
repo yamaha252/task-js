@@ -5,8 +5,10 @@
   "dependencies": {
     "cheerio": "^0.17.0",
     "commander": "^2.3.0",
+    "extend": "^2.0.0",
     "fs": "0.0.2",
     "promptly": "^0.2.0",
-    "q": "^1.0.1"
+    "q": "^1.0.1",
+    "utils": "0.0.1"
   }
 }
