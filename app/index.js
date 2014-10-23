@@ -1,6 +1,6 @@
 var Q = require('q'),
-	Validate = require('./help/validate.js'),
-	Process = require('./help/process.js');
+	Validate = require('./help/validate'),
+	Process = require('./help/process');
 
 /**
  * Запуск модуля с проверкой и обработкой входящих данных
@@ -16,7 +16,7 @@ Module.prototype.run = function(moduleName) {
 		Validate.isFile(this.options.inputFile),
 		Validate.overwrite(this.options.outputFile)
 	]).then(function(){
-		var app = require('./modules/' + moduleName + '.js');
+		var app = require('./modules/' + moduleName);
 		new app({
 			options: this.options,
 			content: Process.readInputFile(this.options.inputFile),

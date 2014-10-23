@@ -2,7 +2,7 @@
 'use strict';
 
 var app = require('commander'),
-	Module = require('./lib/module.js');
+	Module = require('./app');
 
 app
 	.command('analyze')
